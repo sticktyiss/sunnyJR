@@ -1,8 +1,36 @@
-header{
+@use './fonts.scss';
+// 'Bree Serif',
+
+body {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+header {
   height: 123px;
-  .blackRectangle{
+  position: sticky;
+  top: 0px;
+  .blackRectangle {
     background-color: black;
+    position: absolute;
+    // z-index: 1;
     width: 100vw;
     height: 50%;
+  }
+  #logo {
+    position: absolute;
+    left: 16px;
+    top: 2%;
+    // width: 118px;
+    height: 98%;
+  }
+  #phoneNumber {
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-family: 'Bree Serif';
   }
 }
