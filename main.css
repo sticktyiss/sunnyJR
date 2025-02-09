@@ -1,0 +1,10 @@
+header {
+  height: 123px;
+}
+header .blackRectangle {
+  background-color: black;
+  width: 100vw;
+  height: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */
