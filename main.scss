@@ -1,25 +1,29 @@
-@use './fonts.scss';
+@use "./fonts.scss";
 // font declarations
-$headerFont: 'Bree Serif';
-$basicFont: 'Poppins';
-$popFont: 'Permanent Marker';
+$headerFont: "Bree Serif";
+$basicFont: "Poppins";
+$popFont: "Permanent Marker";
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-.popFont{
+.popFont {
   font-family: $popFont;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
 }
-.orangeGrad{
-  background: linear-gradient(135deg, rgba(255, 205, 15, 1) 0%,rgba(227, 83, 0, 1) 100%);
+.orangeGrad {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 205, 15, 1) 0%,
+    rgba(227, 83, 0, 1) 100%
+  );
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
-.blackBg{
+.blackBg {
   background-color: black;
 }
 header {
@@ -39,7 +43,7 @@ header {
     left: 16px;
     top: 2%;
     height: 98%;
-    filter: drop-shadow(4px 4px 3px rgba(0,0,0, 0.4));
+    filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.4));
   }
   #phoneNumber {
     color: white;
@@ -50,38 +54,78 @@ header {
     font-size: 36px;
   }
 }
-#intro{
+#intro {
   // min-height: ; FIXME:
   margin-top: 90px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  h1{
+  h1 {
     font-size: 48px;
     font-family: $headerFont;
   }
-  p{
+  p {
     font-family: $basicFont;
     margin: 30px;
     line-height: 30px;
   }
-  .picRotation{
+  .picRotation {
     width: 80%;
     height: fit-content;
     display: flex;
-    .comparing{
-      width: 40%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4vh;
+    border-radius: 8px;
+    .compareWithText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 35%;
+      margin: 5vh;
+      .comparing {
+        border-radius: 4px;
+        width: 100%;
+      }
+      p {
+        color: white;
+        font-family: $popFont;
+        width: fit-content;
+        margin: 0px;
+        padding-top: 4vh;
+        font-size: 2.2vw;
+        letter-spacing: .2em;
+      }
     }
-    #comparingArrow{
+    #comparingArrow {
       rotate: 90deg;
       height: 20%;
       max-height: 100px;
     }
-    p{
-      color: white;
-      font-family: $popFont;
-      width: fit-content;
-      margin: 0px;
+  }
+  .picSlider {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5vh;
+    div {
+      max-width: 20px;
+      max-height: 20px;
+      width: 1.2vw;
+      height: 1.2vw;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      background-color: rgba(227, 83, 0, 1);
+      border-radius: 100%;
+      margin: 0px 2vw;
+      transition: ease-in-out .2s;
+      &:hover{
+        translate: 0px -5px;
+        transition: ease-in-out .2s;
+      }
+    }
+    .activePic {
+      background-color: rgba(255, 205, 15, 1);
     }
   }
 }

@@ -119,20 +119,60 @@ header #phoneNumber {
   width: 80%;
   height: fit-content;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 4vh;
+  border-radius: 8px;
 }
-#intro .picRotation .comparing {
-  width: 40%;
+#intro .picRotation .compareWithText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  margin: 5vh;
+}
+#intro .picRotation .compareWithText .comparing {
+  border-radius: 4px;
+  width: 100%;
+}
+#intro .picRotation .compareWithText p {
+  color: white;
+  font-family: "Permanent Marker";
+  width: fit-content;
+  margin: 0px;
+  padding-top: 4vh;
+  font-size: 2.2vw;
+  letter-spacing: 0.2em;
 }
 #intro .picRotation #comparingArrow {
   rotate: 90deg;
   height: 20%;
   max-height: 100px;
 }
-#intro .picRotation p {
-  color: white;
-  font-family: "Permanent Marker";
+#intro .picSlider {
   width: fit-content;
-  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5vh;
+}
+#intro .picSlider div {
+  max-width: 20px;
+  max-height: 20px;
+  width: 1.2vw;
+  height: 1.2vw;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: rgb(227, 83, 0);
+  border-radius: 100%;
+  margin: 0px 2vw;
+  transition: ease-in-out 0.2s;
+}
+#intro .picSlider div:hover {
+  translate: 0px -5px;
+  transition: ease-in-out 0.2s;
+}
+#intro .picSlider .activePic {
+  background-color: rgb(255, 205, 15);
 }
 
 /*# sourceMappingURL=main.css.map */
