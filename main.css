@@ -156,7 +156,7 @@ header #phoneNumber {
   flex-direction: row;
   margin-bottom: 5vh;
 }
-#intro .picSlider div {
+#intro .picSlider .sliderDot {
   max-width: 20px;
   max-height: 20px;
   width: 1.2vw;
@@ -167,8 +167,8 @@ header #phoneNumber {
   margin: 0px 2vw;
   transition: ease-in-out 0.2s;
 }
-#intro .picSlider div:hover {
-  translate: 0px -5px;
+#intro .picSlider .sliderDot:hover {
+  translate: 0px -0.25em;
   transition: ease-in-out 0.2s;
 }
 #intro .picSlider .activePic {

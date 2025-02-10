@@ -69,7 +69,7 @@ header {
     margin: 30px;
     line-height: 30px;
   }
-  .picRotation {
+  .picRotation { //TODO:add JS functionality and CSS for pic transitions
     width: 80%;
     height: fit-content;
     display: flex;
@@ -109,7 +109,7 @@ header {
     display: flex;
     flex-direction: row;
     margin-bottom: 5vh;
-    div {
+    .sliderDot {
       max-width: 20px;
       max-height: 20px;
       width: 1.2vw;
@@ -120,7 +120,7 @@ header {
       margin: 0px 2vw;
       transition: ease-in-out .2s;
       &:hover{
-        translate: 0px -5px;
+        translate: 0px -.25em;
         transition: ease-in-out .2s;
       }
     }
