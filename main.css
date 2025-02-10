@@ -16,16 +16,65 @@
   src: url(https://design.penpot.app/internal/gfonts/font/breeserif/v17/4UaHrEJCrhhnVA3DgluA96rp5w.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+@font-face {
+  font-family: "sourcesanspro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://design.penpot.app/fonts/sourcesanspro-regular.woff) format("woff");
+}
+/* latin */
+@font-face {
+  font-family: "Permanent Marker";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://design.penpot.app/internal/gfonts/font/permanentmarker/v16/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://design.penpot.app/internal/gfonts/font/poppins/v22/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://design.penpot.app/internal/gfonts/font/poppins/v22/pxiEyp8kv8JHgFVrJJfecg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 body {
   display: flex;
   flex-direction: column;
-  width: 100vw;
   min-height: 100vh;
+}
+
+.popFont {
+  font-family: "Permanent Marker";
+  letter-spacing: 0.2em;
+}
+
+.orangeGrad {
+  background: linear-gradient(135deg, rgb(255, 205, 15) 0%, rgb(227, 83, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blackBg {
+  background-color: black;
 }
 
 header {
   height: 123px;
-  position: sticky;
+  position: fixed;
   top: 0px;
 }
 header .blackRectangle {
@@ -33,21 +82,57 @@ header .blackRectangle {
   position: absolute;
   width: 100vw;
   height: 50%;
+  box-shadow: 0px 0px 10px black;
 }
 header #logo {
   position: absolute;
   left: 16px;
   top: 2%;
   height: 98%;
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.4));
 }
 header #phoneNumber {
   color: white;
-  position: absolute;
+  position: fixed;
   right: 30px;
   top: 10px;
   font-family: "Bree Serif";
   font-size: 36px;
+}
+
+#intro {
+  margin-top: 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#intro h1 {
+  font-size: 48px;
+  font-family: "Bree Serif";
+}
+#intro p {
+  font-family: "Poppins";
+  margin: 30px;
+  line-height: 30px;
+}
+#intro .picRotation {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+}
+#intro .picRotation .comparing {
+  width: 40%;
+}
+#intro .picRotation #comparingArrow {
+  rotate: 90deg;
+  height: 20%;
+  max-height: 100px;
+}
+#intro .picRotation p {
+  color: white;
+  font-family: "Permanent Marker";
+  width: fit-content;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */
