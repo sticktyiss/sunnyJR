@@ -39,6 +39,7 @@ header #logo {
   left: 16px;
   top: 2%;
   height: 98%;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.6));
 }
 header #phoneNumber {
   color: white;
@@ -46,6 +47,7 @@ header #phoneNumber {
   right: 30px;
   top: 10px;
   font-family: "Bree Serif";
+  font-size: 36px;
 }
 
 /*# sourceMappingURL=main.css.map */
