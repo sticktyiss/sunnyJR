@@ -134,7 +134,7 @@ header {
   }
 }
 #reviews {
-  margin: 20px;
+  margin: 100px;
   border-radius: 8px;
   color: white;
   display: flex;
@@ -144,5 +144,28 @@ header {
     font-family: $headerFont;
     text-align: center;
     font-size: 48px;
+  }
+  ol {
+    margin: 20px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    li {
+      display: flex;
+      flex-direction: row;
+      font-family: $basicFont;
+      img {
+        height: 70px;
+        translate: 0px -15px;
+        margin-right: 10px;
+      }
+      p {
+        width: 30vw;
+        letter-spacing: .05em;
+        line-height: 1.1em;
+      }
+    }
   }
 }

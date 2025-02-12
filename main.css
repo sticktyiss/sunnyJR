@@ -176,7 +176,7 @@ header #phoneNumber {
 }
 
 #reviews {
-  margin: 20px;
+  margin: 100px;
   border-radius: 8px;
   color: white;
   display: flex;
@@ -187,6 +187,29 @@ header #phoneNumber {
   font-family: "Bree Serif";
   text-align: center;
   font-size: 48px;
+}
+#reviews ol {
+  margin: 20px;
+  min-height: 700px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#reviews ol li {
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins";
+}
+#reviews ol li img {
+  height: 70px;
+  translate: 0px -15px;
+  margin-right: 10px;
+}
+#reviews ol li p {
+  width: 30vw;
+  letter-spacing: 0.05em;
+  line-height: 1.1em;
 }
 
 /*# sourceMappingURL=main.css.map */
