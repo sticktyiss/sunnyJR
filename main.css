@@ -175,4 +175,18 @@ header #phoneNumber {
   background-color: rgb(255, 205, 15);
 }
 
+#reviews {
+  margin: 20px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#reviews h2 {
+  margin: 20px;
+  font-family: "Bree Serif";
+  text-align: center;
+  font-size: 48px;
+}
+
 /*# sourceMappingURL=main.css.map */

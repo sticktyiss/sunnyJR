@@ -4,6 +4,10 @@ $headerFont: "Bree Serif";
 $basicFont: "Poppins";
 $popFont: "Permanent Marker";
 
+// Color Variables
+$lighterGradient: rgba(255, 205, 15, 1);
+$darkerGradient: rgba(227, 83, 0, 1);
+
 body {
   display: flex;
   flex-direction: column;
@@ -16,8 +20,8 @@ body {
 .orangeGrad {
   background: linear-gradient(
     135deg,
-    rgba(255, 205, 15, 1) 0%,
-    rgba(227, 83, 0, 1) 100%
+    $lighterGradient 0%,
+    $darkerGradient 100%
   );
   display: flex;
   flex-direction: column;
@@ -115,7 +119,7 @@ header {
       width: 1.2vw;
       height: 1.2vw;
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-      background-color: rgba(227, 83, 0, 1);
+      background-color: $darkerGradient;
       border-radius: 100%;
       margin: 0px 2vw;
       transition: ease-in-out .2s;
@@ -125,7 +129,20 @@ header {
       }
     }
     .activePic {
-      background-color: rgba(255, 205, 15, 1);
+      background-color: $lighterGradient;
     }
+  }
+}
+#reviews {
+  margin: 20px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin: 20px;
+    font-family: $headerFont;
+    text-align: center;
+    font-size: 48px;
   }
 }
