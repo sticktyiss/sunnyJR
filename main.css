@@ -183,7 +183,7 @@ header #phoneNumber {
   flex-direction: column;
 }
 #reviews h2 {
-  margin: 20px;
+  margin: 40px;
   font-family: "Bree Serif";
   text-align: center;
   font-size: 48px;
@@ -210,6 +210,37 @@ header #phoneNumber {
   width: 30vw;
   letter-spacing: 0.05em;
   line-height: 1.1em;
+}
+
+#discount div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+}
+#discount div h2 {
+  font-family: "Bree Serif";
+  font-size: 36px;
+  margin: 20px;
+}
+#discount div img {
+  max-width: 100px;
+  width: 10vw;
+}
+#discount div p {
+  font-size: 28px;
+  font-family: "Poppins";
+  margin: 10px;
+}
+#discount .offeredDiscounts {
+  height: 200px;
+  width: 700px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#discount .offeredDiscounts span {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

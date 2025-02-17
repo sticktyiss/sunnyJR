@@ -140,7 +140,7 @@ header {
   display: flex;
   flex-direction: column;
   h2 {
-    margin: 20px;
+    margin: 40px;
     font-family: $headerFont;
     text-align: center;
     font-size: 48px;
@@ -166,6 +166,39 @@ header {
         letter-spacing: .05em;
         line-height: 1.1em;
       }
+    }
+  }
+}
+#discount {
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    h2 {
+      font-family: $headerFont;
+      font-size: 36px;
+      margin: 20px;
+    }
+    img {
+      max-width: 100px;
+      width: 10vw;
+    }
+    p {
+      font-size: 28px;
+      font-family: $basicFont;
+      margin: 10px;
+    }
+  }
+  .offeredDiscounts {
+    height: 200px;
+    width: 700px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // background-color: green;
+    span {
+      display: flex;
+      align-items: center;
     }
   }
 }
