@@ -97,7 +97,7 @@ header #phoneNumber {
   right: 30px;
   top: 10px;
   font-family: "Bree Serif";
-  font-size: 36px;
+  font-size: 32px;
 }
 
 #intro {
@@ -241,6 +241,21 @@ header #phoneNumber {
 #discount .offeredDiscounts span {
   display: flex;
   align-items: center;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+}
+#services div {
+  display: flex;
+  flex-direction: row;
+}
+#services img {
+  width: 40%;
+}
+#services p {
+  width: 40%;
 }
 
 /*# sourceMappingURL=main.css.map */

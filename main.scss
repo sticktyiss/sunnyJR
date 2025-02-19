@@ -55,7 +55,7 @@ header {
     right: 30px;
     top: 10px;
     font-family: $headerFont;
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 #intro {
@@ -200,5 +200,19 @@ header {
       display: flex;
       align-items: center;
     }
+  }
+}
+#services {
+  display: flex;
+  flex-direction: column;
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+  img {
+    width: 40%;
+  }
+  p {
+    width: 40%;
   }
 }
