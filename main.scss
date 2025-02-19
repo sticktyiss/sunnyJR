@@ -232,3 +232,16 @@ header {
     }
   }
 }
+footer {
+  text-align: center;
+  margin: 30px;
+  h3 {
+    font-family: $headerFont;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  p {
+    font-family: $basicFont;
+    font-size: 14px;
+  }
+}

@@ -274,4 +274,18 @@ header #phoneNumber {
   font-family: "Poppins";
 }
 
+footer {
+  text-align: center;
+  margin: 30px;
+}
+footer h3 {
+  font-family: "Bree Serif";
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+footer p {
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=main.css.map */
