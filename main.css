@@ -261,6 +261,7 @@ header #phoneNumber {
 }
 #services img {
   width: 40%;
+  height: auto;
   border-radius: 8px;
 }
 #services ol {
