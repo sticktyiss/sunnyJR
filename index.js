@@ -26,20 +26,20 @@ afterPicArray = [
   "./images/aftTree.jpg",
   "./images/aftYard.jpg",
 ];
-//FIXME: need to figure this slider out..
-let picIndex = 0;
-displayedPictures();
 
+// changes the compared pictures in the intro section.
+let picIndex = 0;
 displayedPictures = () => {
   beforePic.src = beforePicArray[picIndex];
   afterPic.src = afterPicArray[picIndex];
-
+  
   picIndex++;
   if (picIndex >= beforePicArray.length || picIndex >= afterPicArray.length) {
     picIndex = 0;
   }
   setTimeout(displayedPictures, 2000);
 };
+displayedPictures();
 
 console.log(beforePic.src);
 console.log(afterPic.src);
