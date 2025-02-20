@@ -1,13 +1,11 @@
-picSlider = document.getElementsByClassName("picSlider");
-
-document.querySelectorAll(".sliderDot").forEach((dot) => {
-  dot.addEventListener("click", () => {
-    document
-      .querySelectorAll(".sliderDot")
-      .forEach((d) => d.classList.remove("activePic"));
-    dot.classList.add("activePic");
-  });
-});
+// document.querySelectorAll(".sliderDot").forEach((dot) => {
+//   dot.addEventListener("click", () => {
+//     document
+//       .querySelectorAll(".sliderDot")
+//       .forEach((d) => d.classList.remove("activePic"));
+//     dot.classList.add("activePic");
+//   });
+// });
 
 beforePic = document.querySelector("#beforePic");
 afterPic = document.querySelector("#afterPic");
@@ -40,6 +38,3 @@ displayedPictures = () => {
   setTimeout(displayedPictures, 2000);
 };
 displayedPictures();
-
-console.log(beforePic.src);
-console.log(afterPic.src);
