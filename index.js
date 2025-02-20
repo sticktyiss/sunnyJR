@@ -25,16 +25,27 @@ afterPicArray = [
   "./images/aftYard.jpg",
 ];
 
-// changes the compared pictures in the intro section.
 let picIndex = 0;
+
+// Function to change images with a fade effect
 displayedPictures = () => {
-  beforePic.src = beforePicArray[picIndex];
-  afterPic.src = afterPicArray[picIndex];
-  
-  picIndex++;
-  if (picIndex >= beforePicArray.length || picIndex >= afterPicArray.length) {
-    picIndex = 0;
-  }
-  setTimeout(displayedPictures, 2000);
+  beforePic.style.opacity = ".3";
+  afterPic.style.opacity = ".3";
+
+  setTimeout(() => {
+    beforePic.src = beforePicArray[picIndex];
+    afterPic.src = afterPicArray[picIndex];
+
+    beforePic.style.opacity = "1";
+    afterPic.style.opacity = "1";
+
+    picIndex++;
+    if (picIndex >= beforePicArray.length || picIndex >= afterPicArray.length) {
+      picIndex = 0;
+    }
+
+    setTimeout(displayedPictures, 4000);
+  }, 400); // Adjust timing to match the CSS transition duration
 };
+
 displayedPictures();

@@ -91,6 +91,9 @@ header {
       .comparing {
         border-radius: 4px;
         width: 100%;
+        height: 100%;
+        transition: opacity 0.4s ease-in-out;
+        opacity: 1;
       }
       p {
         color: white;
@@ -108,30 +111,30 @@ header {
       max-height: 100px;
     }
   }
-  .picSlider {
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5vh;
-    .sliderDot {
-      max-width: 20px;
-      max-height: 20px;
-      width: 1.2vw;
-      height: 1.2vw;
-      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-      background-color: $darkerGradient;
-      border-radius: 100%;
-      margin: 0px 2vw;
-      transition: ease-in-out .2s;
-      &:hover{
-        translate: 0px -.25em;
-        transition: ease-in-out .2s;
-      }
-    }
-    .activePic {
-      background-color: $lighterGradient;
-    }
-  }
+  // .picSlider {
+  //   width: fit-content;
+  //   display: flex;
+  //   flex-direction: row;
+  //   margin-bottom: 5vh;
+  //   .sliderDot {
+  //     max-width: 20px;
+  //     max-height: 20px;
+  //     width: 1.2vw;
+  //     height: 1.2vw;
+  //     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  //     background-color: $darkerGradient;
+  //     border-radius: 100%;
+  //     margin: 0px 2vw;
+  //     transition: ease-in-out .2s;
+  //     &:hover{
+  //       translate: 0px -.25em;
+  //       transition: ease-in-out .2s;
+  //     }
+  //   }
+  //   .activePic {
+  //     background-color: $lighterGradient;
+  //   }
+  // }
 }
 #reviews {
   margin: 100px;
