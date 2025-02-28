@@ -101,7 +101,7 @@ header #phoneNumber {
 }
 
 #intro {
-  margin-top: 90px;
+  margin-top: 120px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -117,6 +117,7 @@ header #phoneNumber {
 }
 #intro .picRotation {
   width: 80%;
+  max-width: 1000px;
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -266,6 +267,12 @@ footer h3 {
 footer p {
   font-family: "Poppins";
   font-size: 14px;
+}
+
+@media only screen and (max-device-width: 800px) {
+  #discount .offeredDiscounts {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

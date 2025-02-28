@@ -60,7 +60,7 @@ header {
 }
 #intro {
   // min-height: ; FIXME:
-  margin-top: 90px;
+  margin-top: 120px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -75,6 +75,7 @@ header {
   }
   .picRotation { //TODO:add JS functionality and CSS for pic transitions
     width: 80%;
+    max-width: 1000px;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -111,30 +112,6 @@ header {
       max-height: 100px;
     }
   }
-  // .picSlider {
-  //   width: fit-content;
-  //   display: flex;
-  //   flex-direction: row;
-  //   margin-bottom: 5vh;
-  //   .sliderDot {
-  //     max-width: 20px;
-  //     max-height: 20px;
-  //     width: 1.2vw;
-  //     height: 1.2vw;
-  //     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  //     background-color: $darkerGradient;
-  //     border-radius: 100%;
-  //     margin: 0px 2vw;
-  //     transition: ease-in-out .2s;
-  //     &:hover{
-  //       translate: 0px -.25em;
-  //       transition: ease-in-out .2s;
-  //     }
-  //   }
-  //   .activePic {
-  //     background-color: $lighterGradient;
-  //   }
-  // }
 }
 #reviews {
   margin: 100px;
@@ -247,5 +224,13 @@ footer {
   p {
     font-family: $basicFont;
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-device-width: 800px) {
+  #discount {
+    .offeredDiscounts {
+      width: 100%;
+    }
   }
 }
