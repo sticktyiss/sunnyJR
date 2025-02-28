@@ -228,6 +228,19 @@ footer {
 }
 
 @media only screen and (max-device-width: 800px) {
+  #reviews {
+    margin: 0;
+    border-radius: 0;
+    ol {
+      margin: 2vh;
+      li {
+        margin: 3vw;
+        p{
+          width: auto;
+        }
+      }
+    }
+  }
   #discount {
     .offeredDiscounts {
       width: 100%;
