@@ -263,6 +263,12 @@ footer h3 {
   font-family: "Bree Serif";
   font-size: 36px;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer h3 div {
+  margin-left: 5px;
 }
 footer p {
   font-family: "Poppins";
@@ -318,6 +324,31 @@ footer p {
     width: 80%;
     display: flex;
     flex-direction: column;
+  }
+  #services {
+    margin: 5px;
+    margin-top: 20px;
+  }
+  #services h2 {
+    font-size: 40px;
+  }
+  #services div {
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #services div img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  #services div ol {
+    text-align: center;
+    width: 95%;
+    margin-top: 15px;
+  }
+  #services div ol li {
+    font-size: 5vw;
+    margin-top: 1vh;
   }
 }
 
