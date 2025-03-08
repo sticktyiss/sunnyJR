@@ -31,6 +31,7 @@ body {
   background-color: black;
 }
 header {
+  z-index: 4000;
   height: 123px;
   position: fixed;
   top: 0px;
@@ -233,6 +234,15 @@ footer {
 }
 @media only screen and (max-device-width: 800px) {
   #intro {
+    .picRotation {
+      flex-direction: column;
+      .compareWithText {
+        width: 80%;
+        p {
+          padding: 0px;
+        }
+      }
+    }
     #comparingArrow {
       rotate: 180deg;
     }

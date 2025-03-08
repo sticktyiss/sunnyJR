@@ -73,6 +73,7 @@ body {
 }
 
 header {
+  z-index: 4000;
   height: 123px;
   position: fixed;
   top: 0px;
@@ -274,6 +275,15 @@ footer p {
   }
 }
 @media only screen and (max-device-width: 800px) {
+  #intro .picRotation {
+    flex-direction: column;
+  }
+  #intro .picRotation .compareWithText {
+    width: 80%;
+  }
+  #intro .picRotation .compareWithText p {
+    padding: 0px;
+  }
   #intro #comparingArrow {
     rotate: 180deg;
   }
