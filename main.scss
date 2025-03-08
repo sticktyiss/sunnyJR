@@ -150,6 +150,7 @@ header {
   }
 }
 #discount {
+  // height: 60vh;
   div {
     display: flex;
     flex-direction: row;
@@ -171,7 +172,6 @@ header {
     }
   }
   .offeredDiscounts {
-    height: 200px;
     width: 700px;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -179,6 +179,7 @@ header {
     span {
       display: flex;
       align-items: center;
+      padding: 2vh;
     }
   }
 }
@@ -269,9 +270,16 @@ footer {
     }
   }
   #discount {
+    div {
+      margin: 5px;
+      h2 {
+        font-size: 7vw;
+      }
+    }
     .offeredDiscounts {
       width: 80%;
-      
+      display: flex;
+      flex-direction: column;
     }
   }
 }

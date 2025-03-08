@@ -213,7 +213,6 @@ header #phoneNumber {
   margin: 10px;
 }
 #discount .offeredDiscounts {
-  height: 200px;
   width: 700px;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -221,6 +220,7 @@ header #phoneNumber {
 #discount .offeredDiscounts span {
   display: flex;
   align-items: center;
+  padding: 2vh;
 }
 
 #services {
@@ -308,8 +308,16 @@ footer p {
   #reviews ol li p {
     width: auto;
   }
+  #discount div {
+    margin: 5px;
+  }
+  #discount div h2 {
+    font-size: 7vw;
+  }
   #discount .offeredDiscounts {
     width: 80%;
+    display: flex;
+    flex-direction: column;
   }
 }
 
