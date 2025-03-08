@@ -276,6 +276,7 @@ footer p {
   }
   #reviews ol {
     margin: 2vh;
+    justify-content: flex-start;
   }
   #reviews ol li {
     margin: 3vw;
