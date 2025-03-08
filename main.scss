@@ -234,12 +234,19 @@ footer {
 }
 @media only screen and (max-device-width: 800px) {
   #intro {
+    h1 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .picRotation {
       flex-direction: column;
       .compareWithText {
         width: 80%;
         p {
+          margin-top: 2vh;
           padding: 0px;
+          font-size: 4vh;
         }
       }
     }
@@ -264,6 +271,7 @@ footer {
   #discount {
     .offeredDiscounts {
       width: 100%;
+      
     }
   }
 }
