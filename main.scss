@@ -107,7 +107,6 @@ header {
       }
     }
     #comparingArrow {
-      rotate: 90deg;
       height: 20%;
       max-height: 100px;
     }
@@ -227,7 +226,17 @@ footer {
   }
 }
 
+@media only screen and (min-device-width: 801px) {
+  #comparingArrow {
+    rotate: 90deg;
+  }
+}
 @media only screen and (max-device-width: 800px) {
+  #intro {
+    #comparingArrow {
+      rotate: 180deg;
+    }
+  }
   #reviews {
     margin: 0;
     border-radius: 0;
